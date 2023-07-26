@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .container {
+    display: flex; 
+    justify-content:center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .rate-container {
+    flex: 1 0 300px; 
+    margin: 10px;
+    
+  }

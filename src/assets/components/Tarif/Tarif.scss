@@ -1,0 +1,112 @@
+.container {
+    display: inline-block;
+    margin: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ 
+  .deep-blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0d5e8;
+    height: 15vh;
+    color: white;
+    font-size: 30px;
+    
+  }
+  
+  .deep-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97ccad;
+    height: 15vh;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .deep-red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdb4b2;
+    height: 6vh;
+  }
+  
+  .deep-black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #93a0b3;
+    height: 6vh;
+  }
+  
+  .tarif_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  } 
+
+  .blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #76a7f0;
+    height: 6vh;
+    color: white;
+  }
+
+  .green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4db58a;
+    height: 6vh;
+    color: white;
+  }
+
+  .grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333736;
+    height: 6vh;
+    color: white;
+  }
+
+  .deep-grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #909e9a;
+    height: 15vh;
+    color: white;
+    font-size: 30px;
+  }
+
+  .wine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #671111;
+    height: 6vh;
+    color: white;
+  }
+
+  .deep-wine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #813f3f;
+    height: 15vh;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .container.increase-price {
+    height: 34vh; 
+    font-size: 28px;
+  }
