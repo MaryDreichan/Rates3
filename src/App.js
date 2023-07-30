@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import Tarif from './assets/components/Tarif/Tarif';
 
@@ -40,33 +40,30 @@ const tarifs = [
 ]
 
 function App() {
-  const updatedTarifs = tarifs.map((tarif, index) => {
-    if (index === 2) { 
-      return { ...tarif, price: (parseInt(tarif.price) + 100).toString() };
-    }
-    return tarif;
-  });
+  const [selectedTarif, setSelectedTarif] = useState(null);
+
+  const handleSelectTarif = (tarif) => {
+    setSelectedTarif(tarif);
+  };
 
   return (
-    <>
-      {updatedTarifs.map((tarif, index) => ( 
+    <div>
+      {tarifs.map((tarif) => (
         <Tarif
           key={tarif.price}
-          index={index} 
           titleColor={tarif.titleColor}
           priceColor={tarif.priceColor}
           rateColor={tarif.rateColor}
           volumeColor={tarif.volumeColor}
-          color={tarif.color}
           price={tarif.price}
           rate={tarif.rate}
-          dark_color={tarif.dark_color}
           isSelected={tarif.isSelected}
-          shouldIncreasePrice={index === 2} 
+          onSelectTarif={() => handleSelectTarif(tarif.price)} // Передаем выбранный тариф в функцию handleSelectTarif
         />
       ))}
-    </>
-  )
+      {selectedTarif && <div>Выбран тариф {selectedTarif}</div>}
+    </div>
+  );
 }
 
 export default App;
